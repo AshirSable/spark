@@ -1,0 +1,62 @@
+First five records:
+  Customer_ID  Tenure_Months  ...  Support_Calls  Churn
+0       C1000             58  ...            5.0      0
+1       C1001              7  ...            2.0      1
+2       C1002             13  ...            8.0      1
+3       C1003             17  ...            7.0      0
+4       C1004             13  ...            4.0      0
+
+[5 rows x 7 columns]
+
+Shape: (300, 7)
+
+Columns: ['Customer_ID', 'Tenure_Months', 'Monthly_Charges', 'Total_Charges', 'Contract_Type', 'Support_Calls', 'Churn']
+
+Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 300 entries, 0 to 299
+Data columns (total 7 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   Customer_ID      300 non-null    str    
+ 1   Tenure_Months    300 non-null    int64  
+ 2   Monthly_Charges  290 non-null    float64
+ 3   Total_Charges    300 non-null    float64
+ 4   Contract_Type    300 non-null    str    
+ 5   Support_Calls    290 non-null    float64
+ 6   Churn            300 non-null    int64  
+dtypes: float64(3), int64(2), str(2)
+memory usage: 16.5 KB
+
+Statistical summary:
+       Tenure_Months  Monthly_Charges  Total_Charges  Support_Calls      Churn
+count     300.000000       290.000000     300.000000     290.000000  300.00000
+mean       35.670000       894.565517   32054.886667       4.041379    0.17000
+std        20.186449       339.057432   23512.258548       2.574498    0.37626
+min         1.000000       301.000000     502.000000       0.000000    0.00000
+25%        18.750000       593.500000   13384.500000       2.000000    0.00000
+50%        36.000000       904.500000   26914.500000       4.000000    0.00000
+75%        52.250000      1176.000000   48360.000000       6.000000    0.00000
+max        70.000000      1500.000000  100232.000000       8.000000    1.00000
+
+Missing values:
+Customer_ID         0
+Tenure_Months       0
+Monthly_Charges    10
+Total_Charges       0
+Contract_Type       0
+Support_Calls      10
+Churn               0
+dtype: int64
+
+Missing values after cleaning: 0
+
+Number of features: 13
+Number of records: 300
+Target size: 300
+Churn
+0    249
+1     51
+Name: count, dtype: int64
+
+Feature engineering completed successfully!

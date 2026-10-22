@@ -1,0 +1,13 @@
+project_name: Employee Salary Prediction
+data:
+  file: Employee_Salary_Data.xlsx
+  target: Annual_Salary
+model:
+  algorithm: RandomForestRegressor
+  n_estimators: 100
+  max_depth: 10
+  random_state: 42
+training:
+  test_size: 0.2
+output:
+  model_file: employee_salary_model.pkl

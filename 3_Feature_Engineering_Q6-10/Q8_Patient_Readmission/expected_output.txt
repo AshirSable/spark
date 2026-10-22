@@ -1,0 +1,66 @@
+First five records:
+  Patient_ID  Age  ...  Follow_Up_Visit  Readmitted_Within_30_Days
+0       P001   65  ...               No                        Yes
+1       P002   42  ...              Yes                         No
+2       P003   71  ...               No                        Yes
+3       P004   55  ...              Yes                         No
+4       P005   80  ...               No                        Yes
+
+[5 rows x 8 columns]
+
+Shape: (20, 8)
+
+Columns: ['Patient_ID', 'Age', 'Length_of_Stay_Days', 'Previous_Admissions', 'Chronic_Conditions', 'Medication_Count', 'Follow_Up_Visit', 'Readmitted_Within_30_Days']
+
+Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 20 entries, 0 to 19
+Data columns (total 8 columns):
+ #   Column                     Non-Null Count  Dtype
+---  ------                     --------------  -----
+ 0   Patient_ID                 20 non-null     str  
+ 1   Age                        20 non-null     int64
+ 2   Length_of_Stay_Days        20 non-null     int64
+ 3   Previous_Admissions        20 non-null     int64
+ 4   Chronic_Conditions         20 non-null     int64
+ 5   Medication_Count           20 non-null     int64
+ 6   Follow_Up_Visit            20 non-null     str  
+ 7   Readmitted_Within_30_Days  20 non-null     str  
+dtypes: int64(5), str(3)
+memory usage: 1.4 KB
+
+Statistical summary:
+             Age  Length_of_Stay_Days  ...  Chronic_Conditions  Medication_Count
+count  20.000000            20.000000  ...           20.000000         20.000000
+mean   58.950000             5.800000  ...            2.450000          5.750000
+std    15.069925             3.053902  ...            1.637553          2.769667
+min    33.000000             2.000000  ...            0.000000          2.000000
+25%    46.500000             3.000000  ...            1.000000          3.000000
+50%    59.500000             5.000000  ...            2.000000          5.500000
+75%    71.250000             8.000000  ...            4.000000          8.000000
+max    83.000000            12.000000  ...            5.000000         11.000000
+
+[8 rows x 5 columns]
+
+Missing values:
+Patient_ID                   0
+Age                          0
+Length_of_Stay_Days          0
+Previous_Admissions          0
+Chronic_Conditions           0
+Medication_Count             0
+Follow_Up_Visit              0
+Readmitted_Within_30_Days    0
+dtype: int64
+
+Missing values after cleaning: 0
+
+Number of features: 12
+Number of records: 20
+Target size: 20
+Readmitted_Within_30_Days
+1    10
+0    10
+Name: count, dtype: int64
+
+Feature engineering completed successfully!

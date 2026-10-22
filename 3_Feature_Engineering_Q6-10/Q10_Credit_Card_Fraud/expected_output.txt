@@ -1,0 +1,66 @@
+First five records:
+  Transaction_ID  Transaction_Amount  ...  Distance_From_Home_KM  Fraud
+0           T001                 500  ...                      5     No
+1           T002               25000  ...                    850    Yes
+2           T003                1200  ...                      8     No
+3           T004               18000  ...                    620    Yes
+4           T005                 750  ...                      3     No
+
+[5 rows x 8 columns]
+
+Shape: (20, 8)
+
+Columns: ['Transaction_ID', 'Transaction_Amount', 'Transaction_Hour', 'Transactions_Last_24H', 'International_Transaction', 'Card_Present', 'Distance_From_Home_KM', 'Fraud']
+
+Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 20 entries, 0 to 19
+Data columns (total 8 columns):
+ #   Column                     Non-Null Count  Dtype
+---  ------                     --------------  -----
+ 0   Transaction_ID             20 non-null     str  
+ 1   Transaction_Amount         20 non-null     int64
+ 2   Transaction_Hour           20 non-null     int64
+ 3   Transactions_Last_24H      20 non-null     int64
+ 4   International_Transaction  20 non-null     str  
+ 5   Card_Present               20 non-null     str  
+ 6   Distance_From_Home_KM      20 non-null     int64
+ 7   Fraud                      20 non-null     str  
+dtypes: int64(4), str(4)
+memory usage: 1.4 KB
+
+Statistical summary:
+       Transaction_Amount  ...  Distance_From_Home_KM
+count           20.000000  ...              20.000000
+mean         13150.000000  ...             473.450000
+std          13094.625253  ...             529.113009
+min            500.000000  ...               3.000000
+25%           1050.000000  ...               6.750000
+50%           8650.000000  ...             256.000000
+75%          25500.000000  ...             875.000000
+max          35000.000000  ...            1500.000000
+
+[8 rows x 4 columns]
+
+Missing values:
+Transaction_ID               0
+Transaction_Amount           0
+Transaction_Hour             0
+Transactions_Last_24H        0
+International_Transaction    0
+Card_Present                 0
+Distance_From_Home_KM        0
+Fraud                        0
+dtype: int64
+
+Missing values after cleaning: 0
+
+Number of features: 12
+Number of records: 20
+Target size: 20
+Fraud
+0    10
+1    10
+Name: count, dtype: int64
+
+Feature engineering completed successfully!

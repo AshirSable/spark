@@ -1,0 +1,71 @@
+First five records:
+  House_ID  Area_SqFt  ...  Parking_Spaces  House_Price_INR
+0     H001        800  ...               1          3500000
+1     H002       1200  ...               1          5500000
+2     H003       1500  ...               2          7500000
+3     H004       2000  ...               2         11000000
+4     H005        900  ...               0          3000000
+
+[5 rows x 8 columns]
+
+Shape: (20, 8)
+
+Columns: ['House_ID', 'Area_SqFt', 'Bedrooms', 'Bathrooms', 'Building_Age', 'Distance_From_City_KM', 'Parking_Spaces', 'House_Price_INR']
+
+Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 20 entries, 0 to 19
+Data columns (total 8 columns):
+ #   Column                 Non-Null Count  Dtype
+---  ------                 --------------  -----
+ 0   House_ID               20 non-null     str  
+ 1   Area_SqFt              20 non-null     int64
+ 2   Bedrooms               20 non-null     int64
+ 3   Bathrooms              20 non-null     int64
+ 4   Building_Age           20 non-null     int64
+ 5   Distance_From_City_KM  20 non-null     int64
+ 6   Parking_Spaces         20 non-null     int64
+ 7   House_Price_INR        20 non-null     int64
+dtypes: int64(7), str(1)
+memory usage: 1.4 KB
+
+Statistical summary:
+         Area_SqFt   Bedrooms  ...  Parking_Spaces  House_Price_INR
+count    20.000000  20.000000  ...        20.00000     2.000000e+01
+mean   1507.500000   2.850000  ...         1.35000     7.765000e+06
+std     546.586296   0.933302  ...         0.67082     3.948787e+06
+min     750.000000   1.000000  ...         0.00000     2.500000e+06
+25%    1037.500000   2.000000  ...         1.00000     4.375000e+06
+50%    1450.000000   3.000000  ...         1.00000     7.250000e+06
+75%    1925.000000   4.000000  ...         2.00000     1.062500e+07
+max    2500.000000   4.000000  ...         2.00000     1.500000e+07
+
+[8 rows x 7 columns]
+
+Missing values:
+House_ID                 0
+Area_SqFt                0
+Bedrooms                 0
+Bathrooms                0
+Building_Age             0
+Distance_From_City_KM    0
+Parking_Spaces           0
+House_Price_INR          0
+dtype: int64
+
+Missing values after cleaning: 0
+
+Number of features: 12
+Number of records: 20
+Target size: 20
+count    2.000000e+01
+mean     7.765000e+06
+std      3.948787e+06
+min      2.500000e+06
+25%      4.375000e+06
+50%      7.250000e+06
+75%      1.062500e+07
+max      1.500000e+07
+Name: House_Price_INR, dtype: float64
+
+Feature engineering completed successfully!

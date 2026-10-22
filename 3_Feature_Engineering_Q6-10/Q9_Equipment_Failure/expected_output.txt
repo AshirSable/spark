@@ -1,0 +1,66 @@
+First five records:
+  Machine_ID  Operating_Hours  ...  Equipment_Age_Years  Failure
+0       M001             1200  ...                    5      Yes
+1       M002              500  ...                    2       No
+2       M003             2500  ...                    8      Yes
+3       M004              800  ...                    3       No
+4       M005             3000  ...                   10      Yes
+
+[5 rows x 8 columns]
+
+Shape: (20, 8)
+
+Columns: ['Machine_ID', 'Operating_Hours', 'Temperature_C', 'Vibration_MM_S', 'Pressure_Bar', 'Maintenance_Count', 'Equipment_Age_Years', 'Failure']
+
+Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 20 entries, 0 to 19
+Data columns (total 8 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   Machine_ID           20 non-null     str    
+ 1   Operating_Hours      20 non-null     int64  
+ 2   Temperature_C        20 non-null     int64  
+ 3   Vibration_MM_S       20 non-null     float64
+ 4   Pressure_Bar         20 non-null     float64
+ 5   Maintenance_Count    20 non-null     int64  
+ 6   Equipment_Age_Years  20 non-null     int64  
+ 7   Failure              20 non-null     str    
+dtypes: float64(2), int64(4), str(2)
+memory usage: 1.4 KB
+
+Statistical summary:
+       Operating_Hours  Temperature_C  ...  Maintenance_Count  Equipment_Age_Years
+count        20.000000       20.00000  ...          20.000000            20.000000
+mean       1460.000000       72.00000  ...           2.300000             4.900000
+std         966.218892       16.73949  ...           1.809333             3.143916
+min         400.000000       52.00000  ...           0.000000             1.000000
+25%         637.500000       56.75000  ...           1.000000             2.000000
+50%        1050.000000       68.50000  ...           1.500000             4.000000
+75%        2275.000000       88.50000  ...           4.000000             7.250000
+max        3200.000000       98.00000  ...           6.000000            11.000000
+
+[8 rows x 6 columns]
+
+Missing values:
+Machine_ID             0
+Operating_Hours        0
+Temperature_C          0
+Vibration_MM_S         0
+Pressure_Bar           0
+Maintenance_Count      0
+Equipment_Age_Years    0
+Failure                0
+dtype: int64
+
+Missing values after cleaning: 0
+
+Number of features: 12
+Number of records: 20
+Target size: 20
+Failure
+1    10
+0    10
+Name: count, dtype: int64
+
+Feature engineering completed successfully!

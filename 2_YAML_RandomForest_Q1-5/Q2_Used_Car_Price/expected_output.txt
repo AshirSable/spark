@@ -1,0 +1,24 @@
+Dataset shape: (50, 6)
+   Car_Age  Kilometers_Driven  ...  Owner_Count  Resale_Price_Lakhs
+0        2              18000  ...            1                 6.5
+1        4              45000  ...            1                 7.2
+2        5              60000  ...            2                 5.8
+3        1              10000  ...            1                 8.0
+4        7              85000  ...            2                 5.0
+
+[5 rows x 6 columns]
+
+Missing values:
+Car_Age               0
+Kilometers_Driven     0
+Engine_CC             0
+Mileage_KMPL          0
+Owner_Count           0
+Resale_Price_Lakhs    0
+dtype: int64
+
+Mean Absolute Error (MAE): 0.3
+R2 Score: 0.8843
+Model saved as car_price_model.pkl
+
+Predicted resale price (lakhs): 7.1

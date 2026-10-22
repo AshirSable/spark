@@ -1,0 +1,24 @@
+Dataset shape: (51, 6)
+   Experience_Years Education_Level  ...  Working_Hours_Per_Week  Annual_Salary
+0                 1       Bachelors  ...                      40         300000
+1                 2       Bachelors  ...                      40         350000
+2                 3       Bachelors  ...                      40         420000
+3                 5       Bachelors  ...                      40         650000
+4                 4         Masters  ...                      40         600000
+
+[5 rows x 6 columns]
+
+Missing values:
+Experience_Years          0
+Education_Level           0
+Skills_Score              0
+Age                       0
+Working_Hours_Per_Week    0
+Annual_Salary             0
+dtype: int64
+
+Mean Absolute Error (MAE): 92048.67
+R2 Score: 0.9602
+Model saved as employee_salary_model.pkl
+
+Predicted annual salary: 683200.0

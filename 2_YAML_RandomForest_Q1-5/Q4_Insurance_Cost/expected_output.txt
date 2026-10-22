@@ -1,0 +1,22 @@
+Dataset shape: (50, 6)
+   Age   BMI  Children Smoker  Exercise_Hours_Per_Week  Insurance_Charges
+0   25  22.5         0     No                        5               2500
+1   35  27.5         2     No                        4               4800
+2   45  30.2         1    Yes                        2              18500
+3   29  24.8         0     No                        6               3200
+4   52  31.5         3    Yes                        1              26000
+
+Missing values:
+Age                        0
+BMI                        0
+Children                   0
+Smoker                     0
+Exercise_Hours_Per_Week    0
+Insurance_Charges          0
+dtype: int64
+
+Mean Absolute Error (MAE): 422.7
+R2 Score: 0.9941
+Model saved as insurance_cost_model.pkl
+
+Predicted insurance charges: 4860.42

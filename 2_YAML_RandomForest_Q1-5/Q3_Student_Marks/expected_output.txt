@@ -1,0 +1,24 @@
+Dataset shape: (50, 6)
+   Study_Hours  Attendance_Percentage  ...  Sleep_Hours  Final_Marks
+0            2                     65  ...            6           48
+1            4                     75  ...            7           62
+2            5                     85  ...            7           76
+3            6                     90  ...            8           85
+4            3                     70  ...            6           57
+
+[5 rows x 6 columns]
+
+Missing values:
+Study_Hours              0
+Attendance_Percentage    0
+Previous_Marks           0
+Assignment_Score         0
+Sleep_Hours              0
+Final_Marks              0
+dtype: int64
+
+Mean Absolute Error (MAE): 1.59
+R2 Score: 0.9783
+Model saved as student_marks_model.pkl
+
+Predicted final marks: 77.55
